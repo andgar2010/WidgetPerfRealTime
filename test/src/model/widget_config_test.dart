@@ -48,7 +48,7 @@ void main() {
         enabledPerformance: false,
       );
 
-      expect(config.traceName, 'trace_perf_render_build_custom_test_widget');
+      expect(config.widgetName, 'custom_test_widget');
       expect(config.enabledPerformance, false);
       expect(config.traceName, 'trace_perf_render_build_custom_test_widget');
     });
@@ -60,8 +60,9 @@ void main() {
         traceName: null,
       );
 
-      expect(config.traceName, 'trace_perf_render_build_custom_test_widget');
+      expect(config.widgetName, 'custom_test_widget');
       expect(config.enabledPerformance, false);
+      expect(config.traceName, 'trace_perf_render_build_custom_test_widget');
     });
 
     test('should assign default traceName if traceName is empty string', () {
@@ -71,8 +72,9 @@ void main() {
         traceName: '',
       );
 
-      expect(config.traceName, 'trace_perf_render_build_custom_test_widget');
+      expect(config.widgetName, 'custom_test_widget');
       expect(config.enabledPerformance, false);
+      expect(config.traceName, 'trace_perf_render_build_custom_test_widget');
     });
   });
 }

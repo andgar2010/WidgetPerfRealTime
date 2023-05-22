@@ -11,8 +11,10 @@ class TestWidget extends StatelessWidget with PerformanceWidgetMixin {
 
   final WidgetConfig widgetConfig_;
 
+  @override
   Widget buildMeasured(BuildContext context) => const SizedBox.shrink();
 
+  @override
   WidgetConfig get widgetConfig => widgetConfig_;
 }
 

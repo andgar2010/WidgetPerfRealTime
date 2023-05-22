@@ -128,8 +128,7 @@ mixin PerformanceWidgetMixin {
         }
       });
       return element;
-    } catch (e) {
-      log(e.toString(), name: widgetConfig.traceName);
+    } catch (_) {
       rethrow;
     }
   }
