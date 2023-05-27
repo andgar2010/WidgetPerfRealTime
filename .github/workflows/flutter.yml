@@ -37,7 +37,7 @@ jobs:
           # Flutter SDK cache path
           # cache-path: '${{ runner.tool_cache }}/flutter/:channel:-:version:-:arch:' # optional, change this to specify the cache path
           # The architecture of Flutter SDK executable (x64 or arm64)
-          architecture: x64 # optional, x64 or arm64. default is ${{ runner.arch }}
+          # architecture: x64 # optional, x64 or arm64. default is ${{ runner.arch }}
 
       - name: Flutter Version
         run: flutter --version
