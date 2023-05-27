@@ -31,12 +31,11 @@ jobs:
           # The Flutter build release channel
           channel: 'stable' # optional, default is stable
           # Cache the Flutter SDK
-          # cache: # optional
-          cache: true
+          # cache: true # optional
           # Identifier for the Flutter SDK cache
-          cache-key: 'flutter-:os:-:channel:-:version:-:arch:-:hash:' # optional, change this to force refresh cache
+          # cache-key: 'flutter-:os:-:channel:-:version:-:arch:-:hash:' # optional, change this to force refresh cache
           # Flutter SDK cache path
-          cache-path: '${{ runner.tool_cache }}/flutter/:channel:-:version:-:arch:' # optional, change this to specify the cache path
+          # cache-path: '${{ runner.tool_cache }}/flutter/:channel:-:version:-:arch:' # optional, change this to specify the cache path
           # The architecture of Flutter SDK executable (x64 or arm64)
           architecture: x64 # optional, x64 or arm64. default is ${{ runner.arch }}
 
