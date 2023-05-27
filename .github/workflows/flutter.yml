@@ -9,6 +9,8 @@ on: # rebuild any PRs and main branch changes
 jobs:
   test:
     runs-on: ${{ matrix.os }}
+    permissions:
+      contents: write
     strategy:
       fail-fast: false
       matrix:
